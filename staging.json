@@ -1,0 +1,40 @@
+{
+  "version": "1.0.0",
+  "settings": {
+      "coreHours": {
+        "active": true,
+        "regions": {
+          "1": {
+            "startTime": "00:00:00Z",
+            "endTime": "03:00:00Z",
+            "active": true
+          },
+          "2": {
+            "startTime": "19:00:00Z",
+            "endTime": "22:00:00Z",
+            "active": true
+          },
+          "4": {
+            "startTime": "23:00:00Z",
+            "endTime": "02:00:00Z",
+            "active": true
+          },
+          "7": {
+            "startTime": "12:00:00Z",
+            "endTime": "15:00:00Z",
+            "active": true
+          },
+          "9": {
+            "startTime": "03:00:00Z",
+            "endTime": "06:00:00Z",
+            "active": true
+          },
+          "10": {
+            "startTime": "12:00:00Z",
+            "endTime": "15:00:00Z",
+            "active": true
+          }
+        }
+      }
+    }
+}
