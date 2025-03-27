@@ -1,0 +1,28 @@
+{
+  "name": "exogp-settings",
+  "version": "1.0.0",
+  "description": "This repository contains configuration files for ExoGP services.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:json": "find . -name '*.json' -not -path './node_modules/*' -not -path './package*.json' -exec jsonlint -q {} \\;",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtmosLabs/exogp-settings.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AtmosLabs/exogp-settings/issues"
+  },
+  "homepage": "https://github.com/AtmosLabs/exogp-settings#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^19.2.1",
+    "@commitlint/config-conventional": "^19.1.0",
+    "husky": "^9.0.11",
+    "jsonlint": "^1.6.3"
+  }
+}
