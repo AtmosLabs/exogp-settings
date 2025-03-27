@@ -32,7 +32,7 @@
           "10": {
             "startTime": "12:00:00Z",
             "endTime": "15:00:00Z",
-            "active": true
+            "active": true,
           }
         }
       }
