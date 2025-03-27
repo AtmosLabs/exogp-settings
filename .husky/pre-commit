@@ -1,4 +1,9 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
+# Run JSON linting and store the exit code
 npm run lint:json
+if [ $? -ne 0 ]; then
+  echo "JSON linting failed. Please fix the errors and try again."
+  exit 1
+fi
