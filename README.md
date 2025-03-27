@@ -4,16 +4,16 @@ This repository contains configuration files for ExoGP services.
 
 ## Files
 
-Configuration files are located in the `settings` directory:
-- `settings/live.json`: Production configuration settings
-- `settings/staging.json`: Staging environment configuration settings
+Configuration files are located in the `docs` directory:
+- `docs/live.json`: Production configuration settings
+- `docs/staging.json`: Staging environment configuration settings
 
 ## Usage
 
 Access the configuration files directly via GitHub Pages:
 ```
-https://planetatmos.github.io/exogp-settings/settings/live.json
-https://planetatmos.github.io/exogp-settings/settings/staging.json
+https://planetatmos.github.io/exogp-settings/live.json
+https://planetatmos.github.io/exogp-settings/staging.json
 ```
 
 ## Core Hours Configuration
@@ -56,3 +56,6 @@ This repository includes:
 To validate JSON files locally:
 ```bash
 npm run lint:json
+```
+
+Note: The `/docs` directory is used for GitHub Pages hosting.
