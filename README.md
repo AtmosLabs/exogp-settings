@@ -18,14 +18,18 @@ https://planetatmos.github.io/exogp-settings/staging.json
 
 ## Core Hours Configuration
 
-The configuration defines core hours for each region:
+The configuration defines core hours for each region. Times are stored as minutes since midnight UTC:
+- 0 = 00:00 UTC
+- 720 = 12:00 UTC
+- 1380 = 23:00 UTC
 
-- NA East (1): 00:00-03:00 UTC
-- Europe (2): 19:00-22:00 UTC
-- LATAM (4): 23:00-02:00 UTC
-- Singapore (7): 12:00-15:00 UTC
-- NA West (9): 03:00-06:00 UTC
-- Hong Kong (10): 12:00-15:00 UTC
+Region schedules:
+- NA East (1): 00:00-03:00 UTC (0-180 minutes)
+- Europe (2): 19:00-22:00 UTC (1140-1320 minutes)
+- LATAM (4): 23:00-02:00 UTC (1380-120 minutes)
+- Singapore (7): 12:00-15:00 UTC (720-900 minutes)
+- NA West (9): 03:00-06:00 UTC (180-360 minutes)
+- Hong Kong (10): 12:00-15:00 UTC (720-900 minutes)
 
 ### Schema
 
@@ -37,8 +41,8 @@ The configuration defines core hours for each region:
       "active": boolean,
       "regions": {
         [regionId: string]: {
-          "startTime": "HH:mm:ssZ",
-          "endTime": "HH:mm:ssZ",
+          "startMinutes": number,  // Minutes since midnight UTC (0-1439)
+          "endMinutes": number,    // Minutes since midnight UTC (0-1439)
           "active": boolean
         }
       }
@@ -46,6 +50,9 @@ The configuration defines core hours for each region:
   }
 }
 ```
+
+Note: For times that cross midnight (e.g., 23:00-02:00), the endMinutes will be less than startMinutes.
+This indicates that the time period crosses into the next day.
 
 ## Development
 
