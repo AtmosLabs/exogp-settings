@@ -5,33 +5,33 @@
         "active": true,
         "regions": {
           "1": {
-            "startMinutes": 0,
-            "endMinutes": 180,
+            "startHour": 0,
+            "endHour": 3,
             "active": true
           },
           "2": {
-            "startMinutes": 1140,
-            "endMinutes": 1320,
+            "startHour": 19,
+            "endHour": 22,
             "active": true
           },
           "4": {
-            "startMinutes": 1380,
-            "endMinutes": 120,
+            "startHour": 23,
+            "endHour": 2,
             "active": true
           },
           "7": {
-            "startMinutes": 720,
-            "endMinutes": 900,
+            "startHour": 12,
+            "endHour": 15,
             "active": true
           },
           "9": {
-            "startMinutes": 180,
-            "endMinutes": 360,
+            "startHour": 3,
+            "endHour": 6,
             "active": true
           },
           "10": {
-            "startMinutes": 720,
-            "endMinutes": 900,
+            "startHour": 12,
+            "endHour": 15,
             "active": true
           }
         }
