@@ -22,7 +22,7 @@ The configuration defines core hours for each region using 24-hour UTC time:
 
 Region schedules:
 - NA East (1): 00:00-03:00 UTC
-- Europe (2): 19:00-22:00 UTC
+- Europe (2): 18:00-21:00 UTC
 - LATAM (4): 23:00-02:00 UTC
 - Singapore (7): 12:00-15:00 UTC
 - NA West (9): 03:00-06:00 UTC
