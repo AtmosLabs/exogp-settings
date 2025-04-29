@@ -36,5 +36,15 @@
           }
         }
       }
+    },
+    "notifications": {
+      "zones": {
+        "1": {
+          "active": false,
+          "title": "Maintenance In Progress",
+          "message": "The server is currently under maintenance. Please try again later.",
+          "preventAction": true
+        }
+      }
     }
 }
